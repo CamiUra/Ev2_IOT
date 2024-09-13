@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgFonda"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/la_fonda_b"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <ImageView
+        android:id="@+id/imgSupremo"
+        android:layout_width="285dp"
+        android:layout_height="176dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045"
+        app:srcCompat="@drawable/chat_supremo_removebg" />
+
+    <TextView
+        android:id="@+id/txtMinimarket"
+        android:layout_width="240dp"
+        android:layout_height="69dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/bangers"
+        android:gravity="center"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="20"
+        android:text="La Fonda oficial"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imgSupremo"
+        app:layout_constraintStart_toStartOf="@+id/imgSupremo"
+        app:layout_constraintTop_toBottomOf="@+id/imgSupremo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etxtName"
+
+        android:layout_width="365dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Nombre Producto"
+        android:inputType="text"
+        android:text=""
+        android:textColor="#FF0000"
+        android:textColorHint="#99FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMinimarket"
+        app:layout_constraintVertical_bias="0.002" />
+
+    <EditText
+        android:id="@+id/etxtPrice"
+        android:layout_width="188dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Precio"
+        android:inputType="number"
+        android:textColor="#FF0000"
+        android:textColorHint="#99FF0000"
+        app:layout_constraintBottom_toBottomOf="@+id/etxtQuantity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etxtName"
+        app:layout_constraintTop_toTopOf="@+id/etxtQuantity"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etxtQuantity"
+        android:layout_width="179dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Cantidad"
+        android:textColor="#FF0000"
+        android:textColorHint="#99FF0000"
+        android:inputType=""
+        app:layout_constraintEnd_toEndOf="@+id/etxtName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/etxtPrice"
+        app:layout_constraintTop_toBottomOf="@+id/etxtName" />
+
+    <EditText
+        android:id="@+id/etxtDesc"
+        android:layout_width="366dp"
+        android:layout_height="124dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Descripción"
+        android:inputType="text"
+        android:text=""
+        android:textColor="#FF0000"
+        android:textColorHint="#99FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etxtQuantity"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etxtPrice"
+        app:layout_constraintTop_toBottomOf="@+id/etxtName"
+        app:layout_constraintVertical_bias="0.335" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCommit"
+        android:layout_width="177dp"
+        android:layout_height="76dp"
+        android:fontFamily="casual"
+        android:textColor="#FF0000"
+        android:text="Guardar"
+        android:textColorLink="#FF0000"
+        android:backgroundTint="#33FF0000"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="45"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etxtDesc"
+        app:layout_constraintStart_toStartOf="@+id/etxtDesc"
+        app:layout_constraintTop_toBottomOf="@+id/etxtDesc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductList">
+
+    <ImageView
+        android:id="@+id/imgFonda"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/la_fonda_b"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <ImageView
+        android:id="@+id/imgSupremo"
+        android:layout_width="225dp"
+        android:layout_height="179dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.014"
+        app:srcCompat="@drawable/chat_supremo_removebg" />
+
+    <TextView
+        android:id="@+id/txtMinimarket"
+        android:layout_width="168dp"
+        android:layout_height="69dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/bangers"
+        android:gravity="center"
+        android:text="La Fonda"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="20"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSupremo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgSupremo"
+        app:layout_constraintTop_toTopOf="@+id/imgSupremo"
+        app:layout_constraintVertical_bias="0.427" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="368dp"
+        android:layout_height="160dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="368dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="@+id/divider1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/divider1"
+        app:layout_constraintTop_toBottomOf="@+id/divider1" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="368dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="@+id/divider2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/divider2"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <TextView
+        android:id="@+id/txtProd1"
+        android:layout_width="141dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="casual"
+        android:text="Empanadas de pino"
+        android:textColor="#FF0000"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/divider1"
+        app:layout_constraintStart_toStartOf="@+id/divider1"
+        app:layout_constraintTop_toTopOf="@+id/divider1"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <TextView
+        android:id="@+id/txtDesc1"
+        android:layout_width="131dp"
+        android:layout_height="140dp"
+        android:fontFamily="casual"
+        android:text="Empanada rellena de pino (pino normal, pino picante o sin aceituna)"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toBottomOf="@+id/divider1"
+        app:layout_constraintEnd_toEndOf="@+id/divider1"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintStart_toEndOf="@+id/txtCant1"
+        app:layout_constraintTop_toTopOf="@+id/divider1" />
+
+    <TextView
+        android:id="@+id/txtPrice1"
+        android:layout_width="141dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="casual"
+        android:text="$2.800"
+        android:textColor="#FF0000"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/divider1"
+        app:layout_constraintEnd_toEndOf="@+id/txtCant1"
+        app:layout_constraintStart_toStartOf="@+id/txtCant1"
+        app:layout_constraintTop_toBottomOf="@+id/txtProd1"
+        app:layout_constraintVertical_bias="0.258" />
+
+    <TextView
+        android:id="@+id/txtCant2"
+        android:layout_width="140dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="casual"
+        android:text="Hay: 40"
+        android:textColor="#FF0000"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPrice2"
+        app:layout_constraintEnd_toEndOf="@+id/txtProd2"
+        app:layout_constraintStart_toStartOf="@+id/txtProd2"
+        app:layout_constraintTop_toTopOf="@+id/txtProd2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtProd2"
+        android:layout_width="141dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="casual"
+        android:text="Anticucho"
+        android:textColor="#FF0000"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/divider2"
+        app:layout_constraintStart_toStartOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="@+id/divider2"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <TextView
+        android:id="@+id/txtDesc2"
+        android:layout_width="131dp"
+        android:layout_height="140dp"
+        android:fontFamily="casual"
+        android:text="Anticucho variedades (vacuno, pollo, vegetariano)"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toBottomOf="@+id/divider2"
+        app:layout_constraintEnd_toEndOf="@+id/divider2"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintStart_toEndOf="@+id/txtCant2"
+        app:layout_constraintTop_toTopOf="@+id/divider2" />
+
+    <TextView
+        android:id="@+id/txtPrice2"
+        android:layout_width="141dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="casual"
+        android:text="$1.900"
+        android:textColor="#FF0000"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/divider2"
+        app:layout_constraintEnd_toEndOf="@+id/txtCant1"
+        app:layout_constraintStart_toStartOf="@+id/txtCant2"
+        app:layout_constraintTop_toBottomOf="@+id/txtProd2"
+        app:layout_constraintVertical_bias="0.258" />
+
+    <TextView
+        android:id="@+id/txtCant1"
+        android:layout_width="140dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="casual"
+        android:text="Hay: 67"
+        android:textColor="#FF0000"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPrice1"
+        app:layout_constraintEnd_toEndOf="@+id/txtProd1"
+        app:layout_constraintStart_toStartOf="@+id/txtProd1"
+        app:layout_constraintTop_toTopOf="@+id/txtProd1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtProd3"
+        android:layout_width="141dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="casual"
+        android:text=""
+        android:textColor="#FF0000"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/divider3"
+        app:layout_constraintStart_toStartOf="@+id/divider3"
+        app:layout_constraintTop_toTopOf="@+id/divider3"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <TextView
+        android:id="@+id/txtDesc3"
+        android:layout_width="131dp"
+        android:layout_height="140dp"
+        android:fontFamily="casual"
+        android:text=""
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toBottomOf="@+id/divider3"
+        app:layout_constraintEnd_toEndOf="@+id/divider3"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintStart_toEndOf="@+id/txtCant3"
+        app:layout_constraintTop_toTopOf="@+id/divider3" />
+
+    <TextView
+        android:id="@+id/txtPrice3"
+        android:layout_width="141dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="casual"
+        android:text=""
+        android:textColor="#FF0000"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/divider3"
+        app:layout_constraintEnd_toEndOf="@+id/txtCant3"
+        app:layout_constraintStart_toStartOf="@+id/txtCant3"
+        app:layout_constraintTop_toBottomOf="@+id/txtProd3"
+        app:layout_constraintVertical_bias="0.258" />
+
+    <TextView
+        android:id="@+id/txtCant3"
+        android:layout_width="140dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="casual"
+        android:text=""
+        android:textColor="#FF0000"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPrice3"
+        app:layout_constraintEnd_toEndOf="@+id/txtProd3"
+        app:layout_constraintStart_toStartOf="@+id/txtProd3"
+        app:layout_constraintTop_toTopOf="@+id/txtProd3"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
